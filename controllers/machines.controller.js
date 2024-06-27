@@ -4,7 +4,7 @@ machine.use(express.json());
 
 const machinesArray = require("../models/machine.model.js");
 
-machine.get("/", (req, res) => {
+machine.get("/machines", (req, res) => {
     res.json(machinesArray);
 })
 

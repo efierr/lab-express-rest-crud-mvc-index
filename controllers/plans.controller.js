@@ -4,7 +4,7 @@ plan.use(express.json());
 
 const plansArray = require("../models/plan.model.js");
 
-plan.get("/", (req, res) => {
+plan.get("/plans", (req, res) => {
     res.json(plansArray);
 })
 

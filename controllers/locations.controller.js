@@ -4,7 +4,7 @@ locations.use(express.json());
 
 const locationArray = require("../models/location.model.js")
 
-locations.get("/", (req, res) => {
+locations.get("/locations", (req, res) => {
     res.json(locationArray);
 })
 

@@ -4,7 +4,7 @@ specialEvent.use(express.json());
 
 const specialEventsArray = require("../models/special-event.model.js")
 
-specialEvent.get("/", (req, res) => {
+specialEvent.get("/special-events", (req, res) => {
     res.json(specialEventsArray);
 })
 
