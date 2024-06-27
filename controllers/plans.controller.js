@@ -7,4 +7,6 @@ const plansArray = require("../models/plan.model.js");
 plan.get("/", (req, res) => {
     res.json(plansArray);
 })
+
+
 module.exports = plan;
