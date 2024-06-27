@@ -1,4 +1,12 @@
 const express = require("express");
-const location = express.Router();
+const locations = express.Router();
+locations.use(express.json());
 
 const locationArray = require("../models/location.model.js")
+
+locations.get("/", (req, res) => {
+    res.json(locationArray);
+})
+
+
+module.exports = locations;
